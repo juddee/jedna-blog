@@ -24,7 +24,6 @@ if ( post_password_required() ) {
 
 	<?php
 	// You can start editing here -- including this comment!
-	if ( have_comments() ) :
 		?>
 		<h2 class="comments-title d-flex justify-content-between">
 			<?php
@@ -38,7 +37,7 @@ if ( post_password_required() ) {
 			<a href="#respond" class="btn btn-outline-secondary">Leave a Comment</a>
 
 		</h2><!-- .comments-title -->
-
+	<?php if ( have_comments() ) : ?>
 		<?php the_comments_navigation(); ?>
 
 		<ol class="comment-list">
