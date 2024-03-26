@@ -26,6 +26,7 @@ get_header();
             <!--  -->
             <div class="row">
                 <?php 
+                    
                     if( have_posts() ) : 
                         /* Start the Loop */
 			            while ( have_posts() ) :
@@ -44,7 +45,9 @@ get_header();
                                 <div class="card-body">
                                     <div class="post-author o-7 py-2">
                                         <a href="<?php echo home_url('').'/author/'.$post_author_url; ?>">By <?php echo ' '.$post_author_name; ?></a>
-                                        <a href="<?php echo home_url('').'/category/'.$post_category[0]->slug; ?>" class="category-card btn"><?php echo $post_category[0]->name; ?></a>
+                                        <?php if($post_category): ?>
+                                            <a href="<?php echo home_url('').'/category/'.$post_category[0]->slug; ?>" class="category-card btn"><?php echo $post_category[0]->name; ?></a>
+                                        <?php endif; ?>
                                     </div>
                                     <a href="<?php echo get_permalink(); ?>" class="card-title">
                                         <h5 ><?= the_title(); ?></h5>

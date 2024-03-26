@@ -53,8 +53,8 @@
 
                 </div>
             </div>
-            <div class="text-center" style="opacity:0.5; font-size;11px;">
-                <small>Theme by <a href="#">Juddee</a>  </small>
+            <div class="text-center" style="opacity:0.8; font-size;11px; text-transform: uppercase;">
+                <small><a href="https://github.com/juddee/jedna-blog" target="_blank">Jedna Blog Theme </a> </small>
             </div>
         </div>
     </footer>

@@ -362,3 +362,16 @@ function woocommerce_support()
 	}
 
 
+
+	// Add custom class and id to the comment form container
+	add_action('comment_form_before', 'add_custom_class_and_id_before_comment_form');
+	add_action('comment_form_after', 'add_custom_class_and_id_after_comment_form');
+
+	function add_custom_class_and_id_before_comment_form() {
+		echo '<div class="comment-respond collapse py-3" id="commentForm">';
+	}
+
+	function add_custom_class_and_id_after_comment_form() {
+		echo '</div>';
+	}
+

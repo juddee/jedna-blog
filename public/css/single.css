@@ -113,9 +113,7 @@ main.content .post-metadata h6
     padding:10px;
     font-weight:bold
 }
-.nav-previous:hover,.nav-next:hover {
-    /* background-color:#0170b9; */
-}
+
 .nav-previous:hover a:link ,
 .nav-next:hover a:link ,
 .post-navigation .nav-next a:hover,
@@ -182,9 +180,8 @@ main.content .post-metadata h6
     margin-top: 40px;
 }
 
-.comments-area h2.comments-title {
-    /* font-size: 25px;
-    margin-bottom: 20px; */
+.comments-area h2.comments-title  .comment-count-icon {
+   cursor: pointer;
 }
 
 .comment-list {
@@ -199,7 +196,6 @@ main.content .post-metadata h6
     color: #333;
 }
 
-.comment-meta img {}
 
 .comment-author.vcard {
     position: relative;
@@ -290,10 +286,6 @@ main.content .post-metadata h6
     border-bottom: 0px solid;
     padding-bottom: 0;
     margin-bottom: 0;
-}
-
-.comment-respond {
-    margin-top: 50px;
 }
 
 .comment-notes {
